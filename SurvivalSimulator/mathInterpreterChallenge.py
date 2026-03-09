@@ -1,6 +1,7 @@
 import random
 from challenge import Challenge
 
+
 class mathInterpreterChallenge(Challenge):
     menuName = "Math Interpreter: Unlock the safe"
 
@@ -18,4 +19,5 @@ class mathInterpreterChallenge(Challenge):
             return False
         
         print(f"The result is: {result}. The safe opens!")
+        self.completed = True
         return True

@@ -1,5 +1,6 @@
 from challenge import Challenge
 
+
 class FileExtensionsChallenge(Challenge):
     menuName = "File Extensions: What's in this file?"
     
@@ -15,6 +16,7 @@ class FileExtensionsChallenge(Challenge):
 
         if success:
             print(f"This is a {file_name.split(".")[1].upper()} file containing a {file_name.split(".")[0]}!")
+            self.completed = True
         else:
             print("That's not the correct file name. Try again!")
 

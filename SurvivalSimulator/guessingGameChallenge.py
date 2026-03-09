@@ -23,6 +23,7 @@ class GuessingGameChallenge(Challenge):
             
             if user_input == secret:
                 print("Correct! The door opens.")
+                self.completed = True
                 return True
             elif user_input < secret:
                 print("Too low!")

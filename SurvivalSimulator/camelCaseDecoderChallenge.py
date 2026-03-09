@@ -21,4 +21,5 @@ class CamelCaseDecoderChallenge(Challenge):
         decoded_message = decoded_message.strip()
 
         print("Decoded message: " + decoded_message)
+        self.completed = True
         return True

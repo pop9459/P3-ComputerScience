@@ -1,6 +1,7 @@
 from challenge import Challenge
 from foodItem import FoodItem
 
+
 class NutritionFactsChallenge(Challenge):
     menuName = "Nutrition Facts: Prepare a meal"
     needed_calories = 500
@@ -11,6 +12,7 @@ class NutritionFactsChallenge(Challenge):
         FoodItem("sandwich", 300),
         FoodItem("water", 0)
     ]
+    
     
     def playChallenge(self):
         super().playChallenge()
@@ -35,4 +37,5 @@ class NutritionFactsChallenge(Challenge):
             print(f"{selected_item.name.capitalize()} added! Total calories: {total_calories}")
 
         print("Congratulations! You  Your meal is complete, and you have enough energy.")
+        self.completed = True
         return True
