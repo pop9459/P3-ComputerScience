@@ -18,8 +18,8 @@ class GuessingGameChallenge(Challenge):
 
         print(f"A secret code (between {self.min_value} and {self.max_value}) must be guessed.")
 
-        for attempt in range(attempt):
-            user_input = int(input(f"Guess the code (attempts left: {self.attempts-attempt+1}): "))
+        for attempt in range(self.attempts):
+            user_input = int(input(f"Guess the code (attempts left: {self.attempts-attempt}): "))
             
             if user_input == secret:
                 print("Correct! The door opens.")

@@ -12,7 +12,7 @@ class EmojizeChallenge(Challenge):
         user_input = input("What do these emojis mean? (Hint: food): ").lower().strip()
         
         if user_input == "apple banana cookie":
-            print("Correct! Correct! You receive a key.")
+            print("Correct! You receive a key.")
             return True
         else:
             print("That's not correct. Try again!")

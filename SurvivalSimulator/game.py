@@ -18,14 +18,18 @@ class SurvivalSimulator:
         self.challenges.append(EmojizeChallenge())
         self.challenges.append(GuessingGameChallenge())
 
+
     def exitGame(self):
         print("Thanks for playing! See you next time.")
         exit()
 
-    def menu(self, show_welcome_message=False):
-        if(show_welcome_message):
-            print("Welcome to the Survival Simulator!")
-            print("You are in an abandoned supermarket and must solve puzzles to escape!")
+
+    def showWelcomeMessage(self):
+        print("Welcome to the Survival Simulator!")
+        print("You are in an abandoned supermarket and must solve puzzles to escape!")
+
+
+    def menu(self):
 
         num_challenges = len(self.challenges)
 
@@ -35,12 +39,24 @@ class SurvivalSimulator:
             print(f"{index + 1}. {challenge.menuName}")
         print(num_challenges + 1, ". Exit")
 
-        user_input = input(f"Make a choice (1-{num_challenges + 1}): ")
+        user_input = int(input(f"Make a choice (1-{num_challenges + 1}): "))
 
-        match user_input:
-            case "1":
-                self.challenges[0].playChallenge()
-            case str(num_challenges):
-                self.exitGame()
-            case _:
-                print("Invalid choice. Please try again.")
+        if(user_input <= num_challenges):
+            self.challenges[int(user_input) - 1].playChallenge()
+        elif(user_input == num_challenges + 1):
+            self.exitGame()
+        else:
+            print("Invalid choice. Please try again.")
+
+
+    def gameComplete(self):
+        return all(challenge.completed for challenge in self.challenges)
+
+
+    def start(self):
+        self.showWelcomeMessage()
+
+        while self.gameComplete() == False:
+            self.menu()
+
+        self.exitGame()
