@@ -9,6 +9,12 @@ def shorten(word):
     word = word.replace("i", "")
     word = word.replace("o", "")
     word = word.replace("u", "")
+    word = word.replace("A", "")
+    word = word.replace("E", "")
+    word = word.replace("I", "")
+    word = word.replace("O", "")
+    word = word.replace("U", "")
+
 
     return word
 
