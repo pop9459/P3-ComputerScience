@@ -5,7 +5,7 @@
 
 ## Assignment card
 
-![assignment card](./P3ComputerScienceAssignmentCard.png)
+<img src="./P3ComputerScienceAssignmentCard.png" alt="assignment card" width="620"/>
 
 ## Smart Cafe helper
 
