@@ -3,6 +3,10 @@
 - Student ID: 5486866
 - Repository: https://github.com/pop9459/P3-ComputerScience
 
+## Assignment card
+
+![assignment card](./P3ComputerScienceAssignmentCard.png)
+
 ## Smart Cafe helper
 
 ### Description
