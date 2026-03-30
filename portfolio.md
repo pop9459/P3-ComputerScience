@@ -10,6 +10,7 @@
 ## Smart Cafe helper
 
 ### Description
+This is a simple command-line application that simulates a cafe ordering system. It allows users to customize a welcome message, place orders for various items, calculate the energy of the items based on their weight and type, and process tips for the total order price. The application demonstrates the use of functions, loops, conditionals, and user input handling in Python.
 
 ### Code
 `main.py`
@@ -112,11 +113,10 @@ if __name__ == "__main__":
     print("Thank you for visiting Smart Cafe!")
 ```
 
-### Output
-
 ## Vanity plates goes Flask
 
 ### Description
+This is a simple Flask API that allows users to validate and register vanity license plates. The API provides endpoints for validating a plate, registering a plate, and listing all registered plates. The application uses an SQLite database to store the registered plates and includes a function to check the validity of the plates based on specific criteria.
 
 ### Code
 `main.py`
@@ -234,11 +234,10 @@ def get_registered_plates():
     return plates
 ```
 
-### Output
-
 ## Survival simulator
 
 ### Description
+This is a text-based adventure game called "Survival Simulator". The player finds themselves in an abandoned supermarket and must solve various puzzles and challenges to escape. The game includes multiple challenges such as identifying file extensions, solving math problems, preparing meals based on nutrition facts, decoding camelCase messages, interpreting emojis, and playing a guessing game. The player must complete all challenges to successfully escape the supermarket. The game demonstrates the use of classes, inheritance, and user input handling in Python.
 
 ### Code
 `main.py`
@@ -525,8 +524,6 @@ class GuessingGameChallenge(Challenge):
         return False
 ```
 
-### Output
-
 ## Testing my twttr
 
 ### Description
@@ -574,11 +571,10 @@ def test_shorten():
     print("All tests passed!")
 ```
 
-### Output
-
 ## Bank testing
 
 ### Description
+This is a simple command-line application that simulates a bank greeting system. It evaluates a user's greeting and calculates a monetary value based on specific rules. If the greeting starts with 'hello', the value is $0. If it starts with an 'h', the value is $20. For all other greetings, the value is $100. The application demonstrates the use of functions, string manipulation, and conditionals in Python, and includes a test suite to verify the logic using Pytest.
 
 ### Code
 `bank.py`
@@ -621,11 +617,10 @@ def test_value():
     assert value("  Good morning  ") == 100
 ```
 
-### Output
-
 ## Fuel testing
 
 ### Description
+This is a simple command-line application that simulates a fuel gauge for a vehicle. It takes a fraction as input, representing the amount of fuel in the tank, and converts it to a percentage. The application then displays the fuel gauge based on the percentage, showing "E" for empty, "F" for full, and the percentage for any value in between. The application includes error handling for invalid input and division by zero, and a test suite to verify the logic using Pytest.
 
 ### Code
 `fuel.py`
@@ -707,11 +702,10 @@ def test_gauge():
     assert gauge(100) == "F", "Expected 'F' for 100%"
 ```
 
-### Output
-
 ## Plates testing
 
 ### Description
+This is a simple command-line application that validates vanity license plates based on specific criteria. The application checks if the plate meets the requirements for length, character types, and number positioning. The application includes a test suite to verify the logic using Pytest.
 
 ### Code
 `plate_checker.py`
@@ -777,11 +771,10 @@ def test_is_valid_only_letters_and_numbers():
     assert is_valid("H$3") == False, "H$3 should be marked as invalid because it contains a dollar sign"
 ```
 
-### Output
-
 ## T-shirt
 
 ### Description
+This is a simple command-line application that takes an input image and overlays it with a T-shirt template to create a new image. The application uses the Pillow library to handle image processing tasks such as resizing and pasting the T-shirt template onto the input image. The application validates the input and output file formats, ensuring they are either .jpg, .jpeg, or .png, and that they match. The resulting image is saved to the specified output path.
 
 ### Code
 `shirt.py`
@@ -833,11 +826,10 @@ if __name__ == "__main__":
     main()
 ```
 
-### Output
-
 ## Tic-Tac-Toe
 
 ### Description
+This is a simple implementation of the classic Tic-Tac-Toe game using Pygame for the graphical interface. Players can take turns placing their marks (X or O) on a 3x3 grid, and the game detects when a player has won or when the game is a tie. The game also includes a simple AI opponent that uses the minimax algorithm to make optimal moves. The user can choose to play as either X or O, and the game will display the current state of the board, as well as messages indicating the game's progress and outcome.
 
 ### Code
 `runner.py`
@@ -1164,11 +1156,10 @@ def minimax_value(board):
     return min(values)
 ```
 
-### Output
-
 ## The misleading minesweeper
 
 ### Description
+This is a graphical implementation of the classic Minesweeper game using Pygame. The game features an 8x8 grid with 8 hidden mines. Players can click on cells to reveal them or right-click to flag them as mines. The game provides instructions at the start and displays the number of neighboring mines for each revealed cell. If a player clicks on a mine, they lose the game. The game also includes an AI move button that allows the computer to make a move on behalf of the player. The game also has a twist where one of the cells reports an incorrect number of neighboring mines, adding an extra layer of challenge for the AI. The AI must adapt its strategy to account for the possibility of misleading information while trying to identify the locations of the mines and win the game. The game ends when the player successfully flags all mines or clicks on a mine, resulting in a loss.
 
 ### Code
 `runner.py`
@@ -1605,5 +1596,3 @@ class MinesweeperAI():
         """
         raise NotImplementedError
 ```
-
-### Output
