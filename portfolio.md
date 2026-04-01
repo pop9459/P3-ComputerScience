@@ -826,6 +826,11 @@ if __name__ == "__main__":
     main()
 ```
 
+## Product goes OOP
+
+### Description
+This assignment required me to implement OOP practices into my solo innovator project. The description of the project can be found at this repository https://github.com/pop9459/AutomaticCourtainBlinder or later on in this document if you are viewing the full portfolio.
+
 ## Tic-Tac-Toe
 
 ### Description
